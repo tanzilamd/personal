@@ -44,3 +44,55 @@ header {
 .header .nav ul li a:hover {
     color: #7f97ff;
 }
+/* banner */
+#top-banner {
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.left-b, .right-b {
+    width: 50%;
+}
+.left-b {
+    padding: 20px;
+    padding-right: 40px;
+    margin-top: 100px;
+}
+.right-b img {
+    max-width: 100%;
+}
+.left-b h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #222;
+    
+}
+.left-b h1 {
+    font-size: 48px;
+    margin-top: 20px;
+}
+.left-b p {
+    color: #8f8383;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.left-b input {
+    padding: 12px 30px;
+    background: linear-gradient(90deg,#8393ff,#65bafc);
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 14px;
+    transition: all 0.5s ease-in;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.left-b input:hover {
+    box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.5);
+}
