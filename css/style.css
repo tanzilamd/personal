@@ -11,6 +11,10 @@
 }
 header {
     padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
 }
 .header {
     width: 100%;
@@ -18,6 +22,7 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
 }
 .header .logo {
     
@@ -44,6 +49,25 @@ header {
 }
 .header .nav ul li a:hover {
     color: #7f97ff;
+}
+.nav ul li {
+    position: relative;
+}
+.nav ul li ul {
+    display: none;
+    margin-top: 30px;
+    position: absolute;
+    width: 100px;
+
+}
+.nav ul li ul li {
+    background: white;
+    padding: 20px 25px;
+    display: inline-block;
+
+}
+.nav ul li:hover ul{
+    display: block;
 }
 /* banner */
 #top-banner {
@@ -151,6 +175,9 @@ header {
 .services {
     text-align: center;
 }
+.heading {
+    text-align: center;
+}
 .heading h1 {
     font-size: 30px;
     line-height: 2;
@@ -169,7 +196,7 @@ header {
 }
 .service {
     margin: 10px;
-    padding: 18px 10px;
+    padding: 40px 10px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -215,4 +242,74 @@ header {
 }
 .total p {
     font-size: 14px;
+}
+/* portfolio */
+#portfolio {
+    margin-top: 80px;
+    width: 100%;
+}
+.portfolio .heading p {
+    color: #777;
+    font-size: 14px;
+}
+.portfolio .heading {
+    margin-bottom: 50px;
+}
+.project-img {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.project-img div {
+    flex-basis: 33.333333333333336%;
+    padding: 0 20px;
+    
+}
+.project-img div img {
+    width: 100%;
+}
+.project-img div h1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+}
+.project-img div p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+.project-img div figure {
+    background: linear-gradient(40deg, #9491F1, #7BB7F2);
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 326px;
+    border-radius: 5px;
+}
+.project-img div img {
+    overflow: hidden;
+}
+.project-img div:hover figure img{
+    opacity: 0.2;
+    transition: all ease-out .3s;
+}
+.project-nav {
+    display: flex;
+    justify-content: center;
+}
+.project-nav div {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+.project-nav div h5 {
+    padding: 10px;
+    font-weight: 500;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.project-nav div h5:first-child {
+    color: #8585D1;
 }
