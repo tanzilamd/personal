@@ -313,3 +313,67 @@ header {
 .project-nav div h5:first-child {
     color: #8585D1;
 }
+/* pricing */
+#pricing .heading {
+    margin-top: 100px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 80px;
+}
+.card {
+    background-color: #F9F9FF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px 25px 30px ;
+}
+.card h2 {
+    font-size: 18px;
+}
+.card h1:first-child {
+    font-size: 38px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 2;
+}
+.card-container .card .price {
+    font-size: 32px;
+    line-height: 2;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+}
+.card input {
+    outline: 0;
+    background: linear-gradient(90deg,#8393ff,#65bafc);
+    padding: 8px 0;
+    border: none;
+    color: white;
+    font-weight: 600;
+    width: 80%;
+}
+.card p {
+    line-height: 3;
+    font-size: 14px;
+}
+.card hr {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 1px;
+    border: none;
+    
+}
+.card:hover {
+    background: linear-gradient(90deg,#8391FF, #63BCFC); 
+    color: white !important;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in;
+}
+.card:hover h1 {
+    color: white;
+}
+.card:hover .price {
+    color: white;
+}
+.card:hover input {
+    border: 1px solid white;
+}
